@@ -6,7 +6,7 @@ import Entypo from '@expo/vector-icons/Entypo';
 import * as SplashScreen from 'expo-splash-screen';
 import * as Font from 'expo-font';
 import { registerAsset } from 'react-native-web/dist/cjs/modules/AssetRegistry';
-import Home from './src/screens/home'
+import Home from './src/components/home.jsx'
 
 SplashScreen.preventAutoHideAsync()
 
@@ -37,14 +37,11 @@ export default function App() {
   if (!appIsReady) {
     return null;
   }
-  const Stack = createStackNavigator();
 
     return (
-      <NavigationContainer>
-        <Stack.Navigator initialRouteName="Home">
-          <Stack.Screen name="Home" component={Home} />
-        </Stack.Navigator>
-      </NavigationContainer>
+      <View>
+        <Home/ >
+      </View>
     );
   }
   
