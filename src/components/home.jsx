@@ -168,7 +168,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     alignItems: 'center',
     position: 'absolute',
-    top: 60, // Adjust this value to position the dropdown
+    top: 60, 
     right: 10,
   },
   smallProfileImage: {
